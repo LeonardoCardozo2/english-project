@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+    color: violet;
+}
+h1,h2,h3,h4{
+    color: violet;
+
+}
+p{
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #212121;
+}
+
+.bienvenida h2 {
+    color: violet;
+}
+
+.bienvenida p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: violet;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.destacado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.destacado figure {
+    text-align: center;
+}
+
+.destacado img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido h2 {
+    color: violet;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.sidebar h3 {
+    color: violet;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul li a {
+    color: violet;
+    text-decoration: none;
+}

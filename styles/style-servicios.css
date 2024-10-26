@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:violet;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+header h1{
+    font-size: 25px;
+    font-weight: 600;
+    color: violet; /* Color destacado */
+}
+header a {
+    text-decoration: none;
+    color: violet; /* Color de enlaces */
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+
+.info-incio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 40px 0;
+}
+.info-incio h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+.formulario h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    padding: 10px 25px;
+    font-size: 25px;
+    background-color: blue;
+    border-style: none;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
+}
+button:hover{
+    box-shadow: rgb(120, 120, 196) 5px 5px 8px 5px;
+}
+label {
+    margin-bottom: 10px;
+    color: violet; /* Color destacado para etiquetas */
+}
+.notification {
+    color:rgb(0, 0, 0);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* List Styles */
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    margin: auto;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.grid-item {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.grid-item:hover {
+    transform: scale(1.05);
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#informacion{
+    display: flex;
+    width: 800px;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+}
+#informacion img{
+    width: 800px;
+    height: 350px;
+}
+.servicios{
+    margin-top: 20px;
+}
+
+.cont-horarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+table{
+    width: 60%;
+    height: 250px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+footer ul li a {
+    color: violet;
+    text-decoration: none;
+}

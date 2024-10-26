@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services- Video Game store</title>
+    <link rel="stylesheet" type="text/css" href="styles/style-servicios.css"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap">
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Game Store Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="Portafolio.html" target="_blank">Portafolio</a></li>
+                <li><a href="Contacto.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="info-incio">
+     <strong><h1>Our Services</h1></strong>
+       <h2>Best selling games</h2>
+        <p>Discover the best selling games in our store. From the classics to the latest releases, we have a selection you can't miss.</p>
+    </section>
+
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="imagenes\2.jpeg" alt="League of Legends">
+            <h4>League of Legends</h4>
+            <p>79,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\4.jfif" alt="Fornite">
+            <h4>Fornite</h4>
+            <p>29,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\3.jfif" alt="Valorant">
+            <h4>Valorant</h4>
+            <p>29,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\5.avif" alt="Fall Guys">
+            <h4>Fall Guys</h4>
+            <p>10,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\6.jfif" alt="GRAND THEFT AUTO V">
+            <h4>GRAND THEFT AUTO V</h4>
+            <p>19,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\7.webp" alt="Cyberpunk 2077">
+            <h4>Cyberpunk 2077</h4>
+            <p>19,00 USD</p>
+         </div>
+         <div class="grid-item">
+            <img src="imagenes\8.avif" alt="Call of Duty®: Modern Warfare® II - Lote Multigeneración">   
+            <h4>Call of Duty®: Modern Warfare® II - Lote Multigeneración</h4>
+            <p>39,00 USD</p>
+        </div>
+        <div class="grid-item">
+            <img src="imagenes\9.jpg" alt="Marvel's Spider-Man: Miles Morales PS4 & PS5">
+            <h4>Marvel's Spider-Man: Miles Morales PS4 & PS5</h4>
+            <p>29,00 USD</p>
+            </div>
+        <div class="grid-item">
+            <img src="imagenes\11.jpg" alt="Digital Deluxe Edition de The Last of Us™ Part I">
+            <h4>Digital Deluxe Edition de The Last of Us™ Part I</h4>
+            <p>29,00 USD</p>
+            </div>
+    </div>
+        
+    <article id="informacion">
+        <img src="imagenes/m.webp">
+        <h3>Console Repair Service</h3>
+        <p>We offer professional repair for all video game consoles. We guarantee the best service in record time.</p>
+        <h2 style="margin-top: 20px;">Repair Consolas</h2>
+        <p>Our specialized technicians are trained to repair any problem with your console, from motherboard failures to hard drive problems.</p>
+        
+     <div class="servicios">
+        <h3>Repair Services</h3>
+        <ul>
+          <li>Repair of motherboard</li>
+          <li>Hard disk repair</li>
+          <li>Repair of overheating problems</li>
+          <li>Repair of connectivity problems</li>
+          <li>Other repair services</li>
+        </ul>
+     </div>
+    </article>
+       
+ <section class="cont-horarios">
+    <strong><h1>Hours of operation </h1></strong>
+    <table border="1" cellpading="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Opening times</th>
+                <th>Closing times</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday to Friday</td>
+                <td>08:00 AM</td>
+                <td>08:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 AM</td>
+                <td>06:00 PM</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Cerrado</td>
+                <td>Cerrado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+             <td colspan="3">*Schedules may vary on holidays </td>
+            </tr>
+        </tfoot>
+    </table>
+ </section>
+
+  <div class="formulario">
+     <h3>Request a quote</h3> 
+      <form>
+          <label for="nombre">Name:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="descripcion">Description of the problem</label>
+          <textarea id="descripcion" name="descripcion"></textarea><br><br>
+          <button onclick="enviarFormulario()">Send</button></center>  
+      </form>
+  </div>
+  <script>
+     function enviarFormulario() {
+         document.querySelector('.notification').style.display = 'block';
+    }
+                
+     function closeNotification() {
+         document.querySelector('.notification').style.display = 'none';
+     }
+  </script>
+  <div class="notification">
+      <span class="close-btn" onclick="closeNotification()">&times;</span>
+      <p>¡Thank you for contacting us and requesting a quotation, we will be getting back to you shortly! 
+      </p>
+  </div>
+
+  <footer>
+      <p>&copy; 2024 Tienda de Videojuegos. All rights reserved.</p>
+  </footer>
+ </body>
+ </html>        

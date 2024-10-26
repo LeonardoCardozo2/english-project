@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width , initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilo2.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="Servicios.html" target="_blank">Services</a></li>
+                <li><a href="Portafolio.html" target="_blank">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contact Form</h1>
+        <div class="form-container">
+          <label for="nombre">Name:</label>
+          <input type="text" id="nombre" name="nombre" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="telefono">Telefone number:</label>
+          <input type="tel" id="telefono" name="telefono">
+      
+          <label for="mensaje">Message:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required>
+
+          </textarea>
+      
+          <button onclick="enviarFormulario()">Send</button>
+        </div>
+      </div>
+      
+      <div class="notification">
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+        <p>¡¡Thank you for contacting us, we will be contacting you shortly!!</p>
+      </div>
+      
+      <script>
+      function enviarFormulario() {
+        document.querySelector('.notification').style.display = 'block';
+      }
+      
+      function closeNotification() {
+        document.querySelector('.notification').style.display = 'none';
+      }
+      </script>
+      
+      <img src="C:\_SITIO_WEB_CABRERA_MELANY\imagenes\17.png" alt="17.png">
+        
+ 
+      <footer>
+    
+    <!-- Información de contacto rápida -->
+    <address>
+        <h2>Fast Contact</h2>
+        <p>
+            <strong>Address:</strong> Av. JJ Valle, Pasaje Monte Caseros 
+        </p>
+        <p>
+            <strong>Telefone:</strong> +54 9 3772 564707</p>
+        <p>
+            <strong>Email Address:</strong> <a href="emiliamelany43@gmail.com">emiliamelany43@gmail.com</a>
+        </p>
+    </address>
+</body>
+</html>
+ 
