@@ -137,10 +137,17 @@
           <label for="email">Email Address:</label>
           <input type="email" id="email" name="email"><br><br>
           <label for="descripcion">Description of the problem</label>
-          <textarea id="descripcion" name="descripcion"></textarea><br><br>
-          <button onclick="enviarFormulario()">Send</button></center>  
+          <textarea id="descripcion" name="descripcion"></textarea>
       </form>
+      <center><button onclick="enviarFormulario()">Send</button></center>
   </div>
+
+  <div class="notification">
+    <span class="close-btn" onclick="closeNotification()">&times;</span>
+    <p>¡Thank you for contacting us and requesting a quotation, we will be getting back to you shortly! 
+    </p>
+  </div>
+
   <script>
      function enviarFormulario() {
          document.querySelector('.notification').style.display = 'block';
@@ -150,11 +157,6 @@
          document.querySelector('.notification').style.display = 'none';
      }
   </script>
-  <div class="notification">
-      <span class="close-btn" onclick="closeNotification()">&times;</span>
-      <p>¡Thank you for contacting us and requesting a quotation, we will be getting back to you shortly! 
-      </p>
-  </div>
 
   <footer>
       <p>&copy; 2024 Tienda de Videojuegos. All rights reserved.</p>

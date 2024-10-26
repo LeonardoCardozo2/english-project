@@ -3,13 +3,9 @@
     margin: 0;
     padding: 0;
 }
-@media (max-width:600px)
-{
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
     color: white;
-}  
 }
 
 header {
@@ -50,16 +46,13 @@ nav ul li a {
     margin-top: 10px;
     background-color: #212121;
 }
-
 .bienvenida h2 {
     color: violet;
 }
-
 .bienvenida p {
     font-size: 1.2em;
     color: #fff;
 }
-
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -73,14 +66,15 @@ nav ul li a {
 .destacado {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
     padding: 50px 20px;
 }
-
 .destacado figure {
+    background: #212121;
     text-align: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
-
 .destacado img {
     width: 100%;
     max-width: 400px;
@@ -88,44 +82,43 @@ nav ul li a {
 }
 
 .contenido {
+    margin-top: 50px;
     padding: 50px 20px;
     display: flex;
     justify-content: space-between;
 }
-
 .contenido h2 {
     color: violet;
 }
 
 .sidebar {
     width: 25%;
+    margin: 0 70px
 }
-
 .sidebar h3 {
     color: violet;
 }
-
+.sidebar p{
+    color: #000;
+}
 .sidebar ul {
     list-style: none;
     padding: 0;
 }
-
 .sidebar ul li {
     margin: 10px 0;
 }
-
 .sidebar ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
 footer {
     background-color: #1e1e1e;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0;
     margin-top: 20px;
 }
-
 footer ul {
     list-style: none;
     padding: 0;
@@ -134,7 +127,6 @@ footer ul {
     justify-content: center;
     gap: 10px;
 }
-
 footer ul li a {
     color: violet;
     text-decoration: none;

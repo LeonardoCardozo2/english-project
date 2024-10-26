@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #1e1e1e;
     color: #fff;
 }
@@ -66,17 +66,18 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 button{
-    padding: 10px 25px;
+    padding: 10px 40px;
     font-size: 25px;
     background-color: blue;
     border-style: none;
     border-radius: 10px;
-    transition: box-shadow 0.5s;
+    transition: color 0.5s;
 }
 button:hover{
-    box-shadow: rgb(120, 120, 196) 5px 5px 8px 5px;
+    color: #fff;
 }
 label {
     margin-bottom: 10px;
